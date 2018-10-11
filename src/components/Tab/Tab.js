@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { StyleSheet } from 'react-native';
-import { TabText, TabBody, TabButton } from './styles';
+import { TabBody, TabButton, TabText } from './styles';
 import type { StyleObj } from '../../lib/definitions';
 
 type TabProps = {
@@ -37,7 +37,7 @@ const Tab = ({
   const color = active ? activeTextColor : inActiveTextColor;
 
   return (
-    <TabButton onPress={onPress} tabWidth={tabWidth} stretch={stretch}>
+    <TabButton onPress={onPress} tabWidth={100} stretch={stretch}>
       <TabBody tabHeight={tabHeight}>
         <TabText
           color={color}
