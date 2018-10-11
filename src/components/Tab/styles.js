@@ -1,7 +1,7 @@
 // @flow
 
-import styled from 'styled-components';
 import { Platform } from 'react-native';
+import styled from 'styled-components';
 import Button from '../Touchable';
 import type { StyleObj } from '../../lib/definitions';
 
@@ -20,9 +20,7 @@ type TabButtonProps = {
   tabWidth: number,
 };
 
-export const TabButton = styled(Button)`
-  width: ${(props: TabButtonProps) => props.tabWidth};
-`;
+export const TabButton = styled(Button);
 
 type TabTextProps = {
   color: string,
