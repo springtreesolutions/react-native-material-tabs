@@ -20,7 +20,9 @@ type TabButtonProps = {
   tabWidth: number,
 };
 
-export const TabButton = styled(Button);
+export const TabButton = styled(Button)`
+  flex: 1;
+`;
 
 type TabTextProps = {
   color: string,
