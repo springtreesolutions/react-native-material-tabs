@@ -37,7 +37,12 @@ const Tab = ({
   const color = active ? activeTextColor : inActiveTextColor;
 
   return (
-    <TabButton onPress={onPress} tabWidth={100} stretch={stretch}>
+    <TabButton
+      onPress={onPress}
+      tabWidth={tabWidth}
+      stretch={stretch}
+      active={active}
+    >
       <TabBody tabHeight={tabHeight}>
         <TabText
           color={color}

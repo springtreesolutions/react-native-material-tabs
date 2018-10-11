@@ -96,7 +96,7 @@ export default class MaterialTabs extends React.Component<Props, State> {
     const idx = this.props.selectedIndex;
     const scrollValue = !this.props.scrollable
       ? this.state.tabWidth
-      : this.state.barWidth * 0.4;
+      : this.state.barWidth * 0.46;
 
     // All props for fixed tabs are the same
     if (!this.props.scrollable) {
@@ -136,7 +136,6 @@ export default class MaterialTabs extends React.Component<Props, State> {
   }
 
   getTabWidth(width: number) {
-    console.log(width, 'width');
     if (!this.props.scrollable) {
       this.setState({ tabWidth: width / this.props.items.length });
     }

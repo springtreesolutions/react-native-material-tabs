@@ -17,11 +17,13 @@ export const TabBody = styled.View`
 `;
 
 type TabButtonProps = {
-  tabWidth: number,
+  active: boolean,
 };
 
 export const TabButton = styled(Button)`
-  width: ${(props: TabButtonProps) => props.tabWidth};
+  flex: 1;
+  padding-horizontal: 15;
+  border-bottom-width: ${(props: TabButtonProps) => (props.active ? 2 : 0)};
 `;
 
 type TabTextProps = {

@@ -14,6 +14,7 @@ const Bar = styled(Animated.View)`
   width: ${(props: BarProps) => props.tabWidth};
   position: absolute;
   bottom: 0;
+  opacity: 0;
   background-color: ${(props: BarProps) => props.color};
 `;
 
