@@ -1,13 +1,13 @@
 // @flow
 
-import React from 'react';
 import PropTypes from 'prop-types';
-import { Animated, ScrollView, View, Text } from 'react-native';
-import type { StyleObj } from '../lib/definitions';
+import React from 'react';
+import { Animated, ScrollView, Text, View } from 'react-native';
 import { Bar, TabTrack } from '../lib/styles';
 import values from '../lib/values';
-import Tab from './Tab';
 import Indicator from './Indicator';
+import Tab from './Tab';
+import type { StyleObj } from '../lib/definitions';
 
 type Props = {
   allowFontScaling: boolean,
@@ -136,6 +136,7 @@ export default class MaterialTabs extends React.Component<Props, State> {
   }
 
   getTabWidth(width: number) {
+    console.log(width, 'width');
     if (!this.props.scrollable) {
       this.setState({ tabWidth: width / this.props.items.length });
     }

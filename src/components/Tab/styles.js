@@ -21,7 +21,7 @@ type TabButtonProps = {
 };
 
 export const TabButton = styled(Button)`
-  flex: 1;
+  width: ${(props: TabButtonProps) => props.tabWidth};
 `;
 
 type TabTextProps = {
