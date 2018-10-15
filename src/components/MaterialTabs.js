@@ -199,16 +199,6 @@ export default class MaterialTabs extends React.Component<Props, State> {
               />
             ))}
           </TabTrack>
-
-          <Indicator
-            color={this.props.indicatorColor}
-            value={this.state.indicatorPosition}
-            tabWidth={
-              !this.props.scrollable
-                ? this.state.tabWidth
-                : this.state.barWidth * 0.4
-            }
-          />
         </ScrollView>
       </Bar>
     );
